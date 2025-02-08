@@ -1,6 +1,13 @@
 # SELAMAT DATANG DI PROJECT Elfan & Inoy
 **Membuat Website Berbasis Bootstrap dan PHP**
 
+---
+
+> ### Catatan:
+> Project ini dibuat dan di kembangkan oleh Ackmad Elfan Purnama Dan Firza Inayah
+
+---
+
 ## Link Untuk Design UI
 https://www.figma.com/design/TXJFeLDeOhM4XtL5F8M2Xh/UI-Website---Donasi-Palestine?node-id=1-2&t=4nCjd5XYqjws6qx4-1
 
@@ -82,12 +89,6 @@ https://www.figma.com/design/TXJFeLDeOhM4XtL5F8M2Xh/UI-Website---Donasi-Palestin
   - Menyediakan halaman transparansi dengan data dari database tentang total dana yang terkumpul dan penyaluran dana.
   - Admin dapat mengunggah laporan PDF atau grafik perkembangan dana.
 
----
-
-> ### Catatan:
-> Project ini dibuat dan di kembangkan oleh Ackmad Elfan Purnama Dan Firza Inayah
-
----
 #### Tips github
 1. git config --global user.name "elfan-smkinformatika" //untuk memperkenalkan diri
 2. git add . //menSelect semua file yang akan di rubah
