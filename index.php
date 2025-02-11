@@ -192,10 +192,9 @@ require_once "include/connection.php";
     <!-- Start Footer -->
     <div id="footer" class="paddtop">
         <div class="container d-flex">
-            <!-- <div class="image-owner">
-                <img src="assets/image/" alt="Elfan">
-                <img src="assets/image/" alt="Inoyy">
-            </div> -->
+            <div class="image-owner">
+                <img src="assets/image/owner.png" alt="Owmer Of SanadPalestine" width="200px">
+            </div>
             <div class="navbar-footer">
                 <h3>Navbar</h3>
                 <li><a href="#beranda">Beranda</a></li>
