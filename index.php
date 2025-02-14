@@ -190,28 +190,38 @@ require_once "include/connection.php";
     <!-- End Donasi Diterima -->
 
     <!-- Start Footer -->
-    <div id="footer" class="paddtop">
-        <div class="container d-flex">
-            <div class="image-owner">
-                <img src="assets/image/owner.png" alt="Owmer Of SanadPalestine" width="200px">
+    <footer id="footer">
+        <div class="container-footer">
+            <div class="owner-section-2">
+                <img src="assets/image/Owner-Elfan.png" alt="Elfan" class="owner-fan">
+                <h3 class="fan-name">Ackmad Elfan Purnama</h3>
+                <h4 class="fan-job">Web Developer</h4>
+                <img src="assets/image/Owner-Inoy.png" alt="Inoy" class="owner-noy">
+                <h3 class="noy-name">Firza Inayah</h3>
+                <h4 class="noy-job">Design Website</h4>
             </div>
             <div class="navbar-footer">
                 <h3>Navbar</h3>
-                <li><a href="#beranda">Beranda</a></li>
-                <li><a href="#tentang-kami">Tentang Kami</a></li>
-                <li><a href="#program-donasi">Program Donasi</a></li>
-                <li><a href="#donasi-diterima">Donasi yang Diterima</a></li>
+                <ul>
+                    <li><a href="#beranda">Beranda</a></li>
+                    <li><a href="#tentang-kami">Tentang Kami</a></li>
+                    <li><a href="#program-donasi">Program Donasi</a></li>
+                    <li><a href="#donasi-diterima">Donasi yang Diterima</a></li>
+                </ul>
             </div>
             <div class="contact-footer">
                 <h3>Hubungi Kami</h3>
-                <li><a href="wa.me/6289666192392" target="_blank"><img src="" alt="">0896-6619-2392</a></li>
-                <li><img src="assets/image/" alt="">hayaniazrif@gmail.com</li>
+                <ul>
+                    <li><a href="https://wa.me/6289666192392" target="_blank">📱 0896-6619-2392</a></li>
+                    <li>📧 hayaniazrif@gmail.com</li>
+                </ul>
             </div>
         </div>
         <hr>
-
-    </div>
-    <!-- End Footer -->
+        <p class="copyright">&copy; 2025 SanadPalestine. All rights reserved.</p>
+    </footer>
+    <!-- End Footer -->    
+ 
     <!-- Script -->
     <script src="assets/js/bootstrap.min.js"></script>
     <script>

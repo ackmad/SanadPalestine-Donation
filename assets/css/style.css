@@ -15,6 +15,7 @@ hr{
 
 .paddtop{
     padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .navbar-brand{
@@ -249,51 +250,182 @@ hr{
     justify-content: center;
 }
 
-/* Start Footer */
-
-#footer{
-    /* height: 30vh; */
+/* Footer Styling */
+#footer {
     background-color: #FC6D10;
-    margin-top: 300px;
-    padding: 50px;
-    color: #fff !important;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
 }
 
-.navbar-footer{
-    width: 200px;
-    margin: 0 100px;
+.container-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
 }
 
-.navbar-footer li{
+.owner-section-2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 20vh;
+}
+
+.owner-section-2 img {
+    width: 150px;
+    position: absolute;
+    transition: transform 0.3s ease, z-index 0.3s ease;
+    cursor: pointer;
+    transform-origin: bottom;
+    cursor: default;
+}
+
+.owner-section-2 h3 {
+    cursor: default;
+}
+
+.noy-name, .noy-job, .fan-name, .fan-job {
+    position: absolute;
+    padding: 8px;
+    border-radius: 5px;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.owner-noy {
+    z-index: 1;
+    left: 180px;
+    bottom: -10px;
+    transform-origin: bottom;
+}
+.noy-name {
     font-size: 20px;
-    list-style: none;
-    a{
-        color: #fff;
-        text-decoration: none;
-    }
+    background-color: #FC6D10;
+    bottom: 70px;
+    right: -50px;
+    transform: translateX(100px);
+}
+.noy-job {
+    font-size: 13px;
+    background-color: #383838;
+    bottom: 30px;
+    right: -30px;
+    transform: translateX(100px);
+    z-index: 3;
 }
 
-.navbar-footer li:hover{
-    margin-left: 20px;
-    transition: all ease 0.5s;
+.owner-fan {
+    z-index: 2;
+    left: 50px;
+    bottom: -10px;
+    transform-origin: bottom;
 }
 
-.contact-footer li{
-    list-style: none;
+.fan-name {
     font-size: 20px;
-    a{
-        text-decoration: none;
-        color: #fff;
-    }
+    background-color: #FC6D10;
+    bottom: 75px;
+    left: -50px;
+    transform: translateX(-100px);
+}
+.fan-job {
+    font-size: 13px;
+    background-color: #383838;
+    bottom: 30px;
+    left: 50px;
+    transform: translateX(-100px);
+    z-index: 3;
 }
 
-.contact-footer li:hover{
-    margin-left: 20px;
-    transition: all ease 0.5s;
+.owner-section-2 img:hover {
+    transform: scale(1.15);
+    z-index: 3;
+}
+
+.owner-fan:hover ~ .fan-name,
+.owner-fan:hover ~ .fan-job,
+.owner-noy:hover ~ .noy-name,
+.owner-noy:hover ~ .noy-job {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.owner-section-2 img:hover + .noy-name, .owner-section-2 img:hover + .noy-job, .owner-section-2 img:hover + .fan-name, .owner-section-2 img:hover + .fan-job {
+    transform: translateX(0);
+    z-index: 3;
+}
+
+/* .owner-section-2 img:hover, .owner-section-2 img:focus {
+    transform: scale(1.15);
+    z-index: 3;
+    transform-origin: bottom;
+} */
+
+.navbar-footer,
+.contact-footer {
+    text-align: left;
+}
+
+.navbar-footer h3,
+.contact-footer h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.navbar-footer ul,
+.contact-footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar-footer li,
+.contact-footer li {
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+.navbar-footer a,
+.contact-footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar-footer a:hover,
+.contact-footer a:hover {
+    color: #FFD700;
+    margin-left: 10px;
+}
+
+hr {
+    border: 0.5px solid #fff;
+    margin: 20px 0;
+}
+
+.copyright {
+    font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    .navbar-footer,
+    .contact-footer {
+        margin-top: 20px;
+    }
 }
 
 /* End Footer */
-
 
 /* Start Page Donasi */
 #page_donate{
@@ -479,4 +611,3 @@ label{
 .parag-simple-message{
     font-size: 10px;
 }
-
