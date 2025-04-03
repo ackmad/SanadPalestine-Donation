@@ -1,8 +1,14 @@
 <?php
-    $host = "localhost";
-    $username = "root";
-    $password = "";
-    $database = "donasi_palestine";
+$host = getenv('DB_HOST');      // Mengambil nilai DB_HOST dari environment variables
+$username = getenv('DB_USER');  // Mengambil nilai DB_USER dari environment variables
+$password = getenv('DB_PASSWORD'); // Mengambil nilai DB_PASSWORD dari environment variables
+$dbname = getenv('DB_NAME');    // Mengambil nilai DB_NAME dari environment variables
 
-    $conn = mysqli_connect($host, $username, $password, $database);
+// Membuat koneksi
+$conn = new mysqli($host, $username, $password, $dbname);
+
+// Mengecek koneksi
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
 ?>
